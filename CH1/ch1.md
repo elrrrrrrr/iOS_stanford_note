@@ -11,28 +11,27 @@ ios7 stanford leture note ch1
 - 编程经验
 ios组成
 - Cocoa Touch
-触控层
-高级对象：多点触摸 动画 本地化 地图 提醒组建 
+    触控层
+    高级对象：多点触摸 动画 本地化 地图 提醒组建 
 - Media
-媒体
-视频 图像 PDF OpenAL 
+    媒体
+    视频 图像 PDF OpenAL 
 - Core Services
-核心服务层
-数组 字典 网络 Sqlite Url工具等 线程
+    核心服务层
+    数组 字典 网络 Sqlite Url工具等 线程
 - Core OS
-系统核心，unix系统
-包含套接字 Bonjour 文件系统 证书 证书
-
+    系统核心，unix系统
+    包含套接字 Bonjour 文件系统 证书 证书
 平台组成
 - 工具
-xcode5 Instruments
+    xcode5 Instruments
 - 语言
-Objc
+    Objc
 - 框架
-Foundation Uikit CoreData CoreMotion
+    Foundation Uikit CoreData CoreMotion
 - 设计模式
-MVC
-model view controller
+    MVC
+    model view controller
 
 下半部分
 --------
