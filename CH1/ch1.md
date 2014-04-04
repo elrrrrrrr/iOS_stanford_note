@@ -3,12 +3,12 @@ ios7 stanford leture note ch1
 上半部分
 --------
 课务信息
--课程目标：编写app
--课程时间：十周
+- 课程目标：编写app
+- 课程时间：十周
 课程要求
--面向对象思想
--基础语法
--编程经验
+- 面向对象思想
+- 基础语法
+- 编程经验
 ios组成
 -Cocoa Touch
 触控层
@@ -32,6 +32,8 @@ Objc
 Foundation Uikit CoreData CoreMotion
 -设计模式
 MVC
+model view controller
+
 下半部分
 --------
 基础知识
