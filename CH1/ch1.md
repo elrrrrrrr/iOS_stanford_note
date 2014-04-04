@@ -35,11 +35,28 @@ ios组成
 
 - 框架
     Foundation Uikit CoreData CoreMotion
-    
-- 设计模式
-    MVC
-    model view controller
+
 
 下半部分
 --------
 基础知识
+- 设计模式
+    MVC
+    model view controller
+    model 《 - 》view 不允许通信
+    controller - 》view outlet
+    controller －》model
+    view ->  controller 包含target view中action 满足target 执行
+    view ： should will did 委托给controller进行逻辑判断 不包含data
+    view : data source 从 controller 获取数据
+    model -> controller 不允许通信
+    model 通过notification& kvo 广播和controller通信
+    mvc可以多重嵌套
+－ OBJC
+    兼容C
+    属性(Properties)：setter，getter访问实例方法
+    h & m h文件公共API m文件私有API及实现
+    函数声明无需顺序执行
+    所有对象都在堆上 根据strong 自动释放
+    可向nil指针发送消息
+    nonatomic 不是线程安全，多个线程无法同时设置
