@@ -13,7 +13,7 @@
 
 + (NSArray *) validSuits
 {
-    return @[@"1",@"2",@"3",@"4"];
+    return @[@"♣︎",@"♥︎",@"♦︎",@"♠︎"];
 }
 
 + (NSArray *) rankStrings
@@ -22,7 +22,7 @@
 }
 + (NSUInteger) maxRank
 {
-    return  0;
+    return  13;
 }
 
 - (NSString *)suit

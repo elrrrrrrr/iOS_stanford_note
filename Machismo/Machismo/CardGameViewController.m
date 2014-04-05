@@ -7,15 +7,20 @@
 //
 
 #import "CardGameViewController.h"
+#import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipsCount;
-
+@property (strong,nonatomic) PlayingCardDeck *playingCard ;
 
 @end
 
 @implementation CardGameViewController
+- (PlayingCardDeck *) playingCard
+{
+    return _playingCard ? _playingCard : [[PlayingCardDeck alloc] init ];
+}
 - (void) setFlipsCount:(int)flipsCount
 {
     _flipsCount = flipsCount;
@@ -32,7 +37,7 @@
     } else {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardFront"]
                           forState:UIControlStateNormal];
-        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+        [sender setTitle:    [[self.playingCard drawRandomCard] contents] forState:UIControlStateNormal];
     }
     self.flipsCount ++;
 
