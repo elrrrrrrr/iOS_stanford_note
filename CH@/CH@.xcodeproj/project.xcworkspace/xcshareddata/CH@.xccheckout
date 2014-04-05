@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BB790EA2-D218-4EC8-A018-CDA2E5FDAF73</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CH@</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FDB051EE-633D-42F6-8E45-8DD94633D2BC</key>
+		<string>ssh://github.com/elrrrrrrr/iOS_stanford_note.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CH@/CH@.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FDB051EE-633D-42F6-8E45-8DD94633D2BC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/elrrrrrrr/iOS_stanford_note.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FDB051EE-633D-42F6-8E45-8DD94633D2BC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FDB051EE-633D-42F6-8E45-8DD94633D2BC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS_stanford_note</string>
+		</dict>
+	</array>
+</dict>
+</plist>
