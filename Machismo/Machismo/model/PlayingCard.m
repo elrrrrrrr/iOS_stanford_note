@@ -29,12 +29,15 @@
 {
     int score =0;
     if ([otherCards count] ==1 ){
-        PlayingCard *otherCard = [otherCards firstObject];
-        // [0] 时数组会崩溃
-        if ([self.suit isEqualToString:otherCard.suit] ) {
-            score = 1;
-        } else if (self.rank == otherCard.rank) {
-            score = 4;
+        id card = [otherCards firstObject];
+        if ([card isKindOfClass:[PlayingCard class]]) {
+            PlayingCard *otherCard = [otherCards firstObject];
+            // [0] 时数组会崩溃
+            if ([self.suit isEqualToString:otherCard.suit] ) {
+                score = 1;
+            } else if (self.rank == otherCard.rank) {
+                score = 4;
+            }
         }
     }
     return score;

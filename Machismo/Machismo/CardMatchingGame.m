@@ -60,8 +60,7 @@
                         otherCard.matched = YES;
                     } else {
                         self.score -= MISMATCH_PENALTY;
-                        otherCard.chosen = NO;
-                        
+                        otherCard.chosen = NO;   
                     }
                     break;
                 }
