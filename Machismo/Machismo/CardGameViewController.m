@@ -35,7 +35,7 @@
     return _deck;
 } 
 
-- (Deck *)createCard
+- (Deck *)createCard //abstract
 {
     return [[PlayingCardDeck alloc] init];
 }
