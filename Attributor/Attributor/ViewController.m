@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TextStatsViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *body;
@@ -30,6 +31,17 @@
     [title setAttributes:@{NSStrokeColorAttributeName:self.outlineButton.tintColor,NSStrokeWidthAttributeName:@3} range:NSMakeRange(0, title.length)];
     [self.outlineButton setAttributedTitle:title forState:UIControlStateNormal];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"text2stats"]) {
+        if ([segue.destinationViewController isKindOfClass:[TextStatsViewController class]]) {
+            TextStatsViewController *tsvc = (TextStatsViewController *)segue.destinationViewController;
+            tsvc.textToAnaylize = self.body.textStorage;
+        }
+    }
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
