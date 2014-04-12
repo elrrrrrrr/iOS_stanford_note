@@ -117,8 +117,6 @@
 		AF52832318F7B5F300CC8D31 /* SuperCard */ = {
 			isa = PBXGroup;
 			children = (
-				AF52832C18F7B5F300CC8D31 /* AppDelegate.h */,
-				AF52832D18F7B5F300CC8D31 /* AppDelegate.m */,
 				AF52832F18F7B5F300CC8D31 /* Main_iPhone.storyboard */,
 				AF52835518F7B7F700CC8D31 /* PlayingCardView.h */,
 				AF52835618F7B7F700CC8D31 /* PlayingCardView.m */,
@@ -134,6 +132,8 @@
 		AF52832418F7B5F300CC8D31 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF52832C18F7B5F300CC8D31 /* AppDelegate.h */,
+				AF52832D18F7B5F300CC8D31 /* AppDelegate.m */,
 				AF52832518F7B5F300CC8D31 /* SuperCard-Info.plist */,
 				AF52832618F7B5F300CC8D31 /* InfoPlist.strings */,
 				AF52832918F7B5F300CC8D31 /* main.m */,
@@ -476,6 +476,7 @@
 				AF52835118F7B5F300CC8D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF52835218F7B5F300CC8D31 /* Build configuration list for PBXNativeTarget "SuperCardTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				AF52835418F7B5F300CC8D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
