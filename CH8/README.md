@@ -45,4 +45,61 @@ block ＝ a block code
 	}
 }］;
 遍历所有元素,遇到ENOUTH中断
-{}内代码可调用外部变量,但不能修改它们
+{}内代码可调用外部变量,但不能修改它们,除非用 __block 标记
+__block BOOL stoppedEarly = NO;
+
+block作用
+--------
+遍历
+view动画
+排序
+通知
+异常处理
+结束异常
+
+多线程
+------
+(GCD)API ： Grand Central Dispath
+
+Animation
+---------
+animation views
+一些列动画集合
+transitions 
+控制器跳转
+core animation
+
+view animation 方式
+-----------
+1.修改属性
+frame 
+transform
+alpha
+2.UIVew class method,blocks
++(void)animateWithDuration:(NSTimeInterval)duration
+							delay:(NSTimeInterval)delay
+							options:(UIViewAnimationOptions)options
+							animations:(void(^)(void))animations
+							completion:(void(^)(BOOL finished))completion;
+ex
+[UIView animateWithDuration:3.0
+					  delay:0.0
+					  options:UIviewAnimationOptionBeginFromCurrentState
+					  animations:^{adView.alpha = 0.0 ;}
+					  completion:^(BOOL fin) { if (fin) [myView removeFromSuperview]; }];
+]
+
++(void)transitionWithView:
+
+Dynamic Animation
+----------------
+步骤
+创建UIDynamicAnimator
+Add UIDynamicBehaviors (Gravity Collision Attachment)
+Add UIDynamicItems to UIDynamicBehaviors
+
+
+
+
+
+
