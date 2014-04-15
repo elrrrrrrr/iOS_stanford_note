@@ -24,12 +24,15 @@ static const CGSize DROP_SIZE = {40,40};
 }
 
 
--(void)dynamicAnimatoDidPause:(UIDynamicAnimator *)animator
+-(void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator
 {
 
     [self removeCompletedRow];
 
 }
+//- (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator {
+//    NSLog(@"pause");
+//}
 
 -(BOOL)removeCompletedRow
 {
@@ -92,7 +95,7 @@ static const CGSize DROP_SIZE = {40,40};
 {
     if (!_animator){
         _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.gameView];
-        [self.animator setDelegate:self];
+        self.animator.delegate = self;
     }
     return _animator;
 }
