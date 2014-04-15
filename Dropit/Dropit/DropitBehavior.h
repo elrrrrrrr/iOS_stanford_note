@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DropitBehavior : UIDynamicBehavior
-
+-(void)addItem:(id <UIDynamicItem>)item;
+-(void)removeItem:(id<UIDynamicItem>)item;
 @end
