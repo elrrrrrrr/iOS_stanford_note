@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "-drop"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "-dropitBehavior"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "-drop"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "-dropitBehavior"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "-dropitBehavior"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "-removeCompletedRow"
             landmarkType = "5">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "-removeCompletedRow"
             landmarkType = "5">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "-drop"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267529.407494"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-animator"
             landmarkType = "5">
          </BreakpointContent>
@@ -234,12 +234,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dropit/DropitViewController.m"
-            timestampString = "419267558.178657"
+            timestampString = "419316894.423561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-dynamicAnimatoDidPause:"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-dynamicAnimatorDidPause:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

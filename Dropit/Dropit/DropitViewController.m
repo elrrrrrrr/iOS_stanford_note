@@ -8,11 +8,14 @@
 
 #import "DropitViewController.h"
 #import "DropitBehavior.h"
+#import "BazierPaseView.h"
 
 @interface DropitViewController () <UIDynamicAnimatorDelegate>
-@property (weak, nonatomic) IBOutlet UIView *gameView;
+@property (weak, nonatomic) IBOutlet BazierPaseView *gameView;
 @property (strong,nonatomic) UIDynamicAnimator *animator;
 @property (strong,nonatomic) DropitBehavior *dropitBehavior;
+@property (strong,nonatomic) UIAttachmentBehavior *attachment;
+@property (strong,nonatomic) UIView *dropingView;
 
 @end
 
@@ -23,7 +26,38 @@ static const CGSize DROP_SIZE = {40,40};
     [self drop];
 }
 
+- (IBAction)pan:(UIPanGestureRecognizer *)sender
+{
+    CGPoint gesturePoint = [sender locationInView:self.gameView];
+    
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        [self attachDropingViewToPoint:gesturePoint];
+    } else if (sender.state == UIGestureRecognizerStateChanged){
+        self.attachment.anchorPoint = gesturePoint;
+    } else if (sender.state == UIGestureRecognizerStateEnded){
+        [self.animator removeBehavior:self.attachment];
+        self.gameView.path = nil;
+    }
+    
+}
 
+-(void)attachDropingViewToPoint:(CGPoint)gesturePoint
+{
+    if (self.dropingView) {
+        self.attachment = [[UIAttachmentBehavior alloc] initWithItem:self.dropingView attachedToAnchor:gesturePoint];
+        UIView *dropingView = self.dropingView;
+        __weak DropitViewController *weakSelf = self;
+        self.attachment.action = ^{
+            UIBezierPath *path = [[UIBezierPath alloc] init];
+            [path moveToPoint:weakSelf.attachment.anchorPoint];
+            [path addLineToPoint:dropingView.center];
+            weakSelf.gameView.path = path;
+        };
+        self.dropingView = nil;
+        [self.animator addBehavior:self.attachment];
+    }
+    
+}
 -(void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator
 {
 
@@ -114,6 +148,7 @@ static const CGSize DROP_SIZE = {40,40};
     dropView.backgroundColor = [self randomColor];
     [self.gameView addSubview:dropView];
     [self.dropitBehavior addItem:dropView];
+    self.dropingView = dropView;
 
 
 }

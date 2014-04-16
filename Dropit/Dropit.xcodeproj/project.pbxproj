@@ -22,6 +22,7 @@
 		AF7ABD4D18FD29BC0055839A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD4B18FD29BC0055839A /* InfoPlist.strings */; };
 		AF7ABD4F18FD29BC0055839A /* DropitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD4E18FD29BC0055839A /* DropitTests.m */; };
 		AF7ABD5A18FD30350055839A /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD5918FD30350055839A /* DropitBehavior.m */; };
+		AF7ABD5D18FE41F30055839A /* BazierPaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD5C18FE41F30055839A /* BazierPaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		AF7ABD4E18FD29BC0055839A /* DropitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropitTests.m; sourceTree = "<group>"; };
 		AF7ABD5818FD30350055839A /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
 		AF7ABD5918FD30350055839A /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
+		AF7ABD5B18FE41F30055839A /* BazierPaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BazierPaseView.h; sourceTree = "<group>"; };
+		AF7ABD5C18FE41F30055839A /* BazierPaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BazierPaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				AF7ABD3218FD29BC0055839A /* Main_iPhone.storyboard */,
 				AF7ABD3818FD29BC0055839A /* DropitViewController.h */,
 				AF7ABD3918FD29BC0055839A /* DropitViewController.m */,
+				AF7ABD5B18FE41F30055839A /* BazierPaseView.h */,
+				AF7ABD5C18FE41F30055839A /* BazierPaseView.m */,
 				AF7ABD5818FD30350055839A /* DropitBehavior.h */,
 				AF7ABD5918FD30350055839A /* DropitBehavior.m */,
 				AF7ABD3B18FD29BC0055839A /* Images.xcassets */,
@@ -255,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7ABD5D18FE41F30055839A /* BazierPaseView.m in Sources */,
 				AF7ABD3A18FD29BC0055839A /* DropitViewController.m in Sources */,
 				AF7ABD5A18FD30350055839A /* DropitBehavior.m in Sources */,
 				AF7ABD3118FD29BC0055839A /* DropitAppDelegate.m in Sources */,
@@ -467,6 +473,7 @@
 				AF7ABD5418FD29BC0055839A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF7ABD5518FD29BC0055839A /* Build configuration list for PBXNativeTarget "DropitTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +482,7 @@
 				AF7ABD5718FD29BC0055839A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
