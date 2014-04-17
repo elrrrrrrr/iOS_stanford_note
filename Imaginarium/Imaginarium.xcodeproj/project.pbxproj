@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF7ABD6B18FFC8390055839A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD6A18FFC8390055839A /* Foundation.framework */; };
+		AF7ABD6D18FFC8390055839A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD6C18FFC8390055839A /* CoreGraphics.framework */; };
+		AF7ABD6F18FFC8390055839A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD6E18FFC8390055839A /* UIKit.framework */; };
+		AF7ABD7518FFC8390055839A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD7318FFC8390055839A /* InfoPlist.strings */; };
+		AF7ABD7718FFC8390055839A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD7618FFC8390055839A /* main.m */; };
+		AF7ABD7B18FFC8390055839A /* ImaginariumAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD7A18FFC8390055839A /* ImaginariumAppDelegate.m */; };
+		AF7ABD7E18FFC8390055839A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD7C18FFC8390055839A /* Main_iPhone.storyboard */; };
+		AF7ABD8118FFC8390055839A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD7F18FFC8390055839A /* Main_iPad.storyboard */; };
+		AF7ABD8418FFC8390055839A /* ImaginariumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD8318FFC8390055839A /* ImaginariumViewController.m */; };
+		AF7ABD8618FFC8390055839A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD8518FFC8390055839A /* Images.xcassets */; };
+		AF7ABD8D18FFC8390055839A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD8C18FFC8390055839A /* XCTest.framework */; };
+		AF7ABD8E18FFC8390055839A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD6A18FFC8390055839A /* Foundation.framework */; };
+		AF7ABD8F18FFC8390055839A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD6E18FFC8390055839A /* UIKit.framework */; };
+		AF7ABD9718FFC8390055839A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD9518FFC8390055839A /* InfoPlist.strings */; };
+		AF7ABD9918FFC8390055839A /* ImaginariumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD9818FFC8390055839A /* ImaginariumTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF7ABD9018FFC8390055839A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF7ABD5F18FFC8390055839A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF7ABD6618FFC8390055839A;
+			remoteInfo = Imaginarium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF7ABD6718FFC8390055839A /* Imaginarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imaginarium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7ABD6A18FFC8390055839A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF7ABD6C18FFC8390055839A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF7ABD6E18FFC8390055839A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF7ABD7218FFC8390055839A /* Imaginarium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Imaginarium-Info.plist"; sourceTree = "<group>"; };
+		AF7ABD7418FFC8390055839A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF7ABD7618FFC8390055839A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF7ABD7818FFC8390055839A /* Imaginarium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Imaginarium-Prefix.pch"; sourceTree = "<group>"; };
+		AF7ABD7918FFC8390055839A /* ImaginariumAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImaginariumAppDelegate.h; sourceTree = "<group>"; };
+		AF7ABD7A18FFC8390055839A /* ImaginariumAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumAppDelegate.m; sourceTree = "<group>"; };
+		AF7ABD7D18FFC8390055839A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		AF7ABD8018FFC8390055839A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		AF7ABD8218FFC8390055839A /* ImaginariumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImaginariumViewController.h; sourceTree = "<group>"; };
+		AF7ABD8318FFC8390055839A /* ImaginariumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumViewController.m; sourceTree = "<group>"; };
+		AF7ABD8518FFC8390055839A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF7ABD8B18FFC8390055839A /* ImaginariumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginariumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7ABD8C18FFC8390055839A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF7ABD9418FFC8390055839A /* ImaginariumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImaginariumTests-Info.plist"; sourceTree = "<group>"; };
+		AF7ABD9618FFC8390055839A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF7ABD9818FFC8390055839A /* ImaginariumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF7ABD6418FFC8390055839A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7ABD6D18FFC8390055839A /* CoreGraphics.framework in Frameworks */,
+				AF7ABD6F18FFC8390055839A /* UIKit.framework in Frameworks */,
+				AF7ABD6B18FFC8390055839A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7ABD8818FFC8390055839A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7ABD8D18FFC8390055839A /* XCTest.framework in Frameworks */,
+				AF7ABD8F18FFC8390055839A /* UIKit.framework in Frameworks */,
+				AF7ABD8E18FFC8390055839A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF7ABD5E18FFC8390055839A = {
+			isa = PBXGroup;
+			children = (
+				AF7ABD7018FFC8390055839A /* Imaginarium */,
+				AF7ABD9218FFC8390055839A /* ImaginariumTests */,
+				AF7ABD6918FFC8390055839A /* Frameworks */,
+				AF7ABD6818FFC8390055839A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF7ABD6818FFC8390055839A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF7ABD6718FFC8390055839A /* Imaginarium.app */,
+				AF7ABD8B18FFC8390055839A /* ImaginariumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF7ABD6918FFC8390055839A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF7ABD6A18FFC8390055839A /* Foundation.framework */,
+				AF7ABD6C18FFC8390055839A /* CoreGraphics.framework */,
+				AF7ABD6E18FFC8390055839A /* UIKit.framework */,
+				AF7ABD8C18FFC8390055839A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF7ABD7018FFC8390055839A /* Imaginarium */ = {
+			isa = PBXGroup;
+			children = (
+				AF7ABD7918FFC8390055839A /* ImaginariumAppDelegate.h */,
+				AF7ABD7A18FFC8390055839A /* ImaginariumAppDelegate.m */,
+				AF7ABD7C18FFC8390055839A /* Main_iPhone.storyboard */,
+				AF7ABD7F18FFC8390055839A /* Main_iPad.storyboard */,
+				AF7ABD8218FFC8390055839A /* ImaginariumViewController.h */,
+				AF7ABD8318FFC8390055839A /* ImaginariumViewController.m */,
+				AF7ABD8518FFC8390055839A /* Images.xcassets */,
+				AF7ABD7118FFC8390055839A /* Supporting Files */,
+			);
+			path = Imaginarium;
+			sourceTree = "<group>";
+		};
+		AF7ABD7118FFC8390055839A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF7ABD7218FFC8390055839A /* Imaginarium-Info.plist */,
+				AF7ABD7318FFC8390055839A /* InfoPlist.strings */,
+				AF7ABD7618FFC8390055839A /* main.m */,
+				AF7ABD7818FFC8390055839A /* Imaginarium-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF7ABD9218FFC8390055839A /* ImaginariumTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF7ABD9818FFC8390055839A /* ImaginariumTests.m */,
+				AF7ABD9318FFC8390055839A /* Supporting Files */,
+			);
+			path = ImaginariumTests;
+			sourceTree = "<group>";
+		};
+		AF7ABD9318FFC8390055839A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF7ABD9418FFC8390055839A /* ImaginariumTests-Info.plist */,
+				AF7ABD9518FFC8390055839A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF7ABD6618FFC8390055839A /* Imaginarium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7ABD9C18FFC8390055839A /* Build configuration list for PBXNativeTarget "Imaginarium" */;
+			buildPhases = (
+				AF7ABD6318FFC8390055839A /* Sources */,
+				AF7ABD6418FFC8390055839A /* Frameworks */,
+				AF7ABD6518FFC8390055839A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Imaginarium;
+			productName = Imaginarium;
+			productReference = AF7ABD6718FFC8390055839A /* Imaginarium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF7ABD8A18FFC8390055839A /* ImaginariumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7ABD9F18FFC8390055839A /* Build configuration list for PBXNativeTarget "ImaginariumTests" */;
+			buildPhases = (
+				AF7ABD8718FFC8390055839A /* Sources */,
+				AF7ABD8818FFC8390055839A /* Frameworks */,
+				AF7ABD8918FFC8390055839A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF7ABD9118FFC8390055839A /* PBXTargetDependency */,
+			);
+			name = ImaginariumTests;
+			productName = ImaginariumTests;
+			productReference = AF7ABD8B18FFC8390055839A /* ImaginariumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF7ABD5F18FFC8390055839A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Imaginarium;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = elr;
+				TargetAttributes = {
+					AF7ABD8A18FFC8390055839A = {
+						TestTargetID = AF7ABD6618FFC8390055839A;
+					};
+				};
+			};
+			buildConfigurationList = AF7ABD6218FFC8390055839A /* Build configuration list for PBXProject "Imaginarium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF7ABD5E18FFC8390055839A;
+			productRefGroup = AF7ABD6818FFC8390055839A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF7ABD6618FFC8390055839A /* Imaginarium */,
+				AF7ABD8A18FFC8390055839A /* ImaginariumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF7ABD6518FFC8390055839A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7ABD8118FFC8390055839A /* Main_iPad.storyboard in Resources */,
+				AF7ABD8618FFC8390055839A /* Images.xcassets in Resources */,
+				AF7ABD7E18FFC8390055839A /* Main_iPhone.storyboard in Resources */,
+				AF7ABD7518FFC8390055839A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7ABD8918FFC8390055839A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7ABD9718FFC8390055839A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF7ABD6318FFC8390055839A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7ABD8418FFC8390055839A /* ImaginariumViewController.m in Sources */,
+				AF7ABD7B18FFC8390055839A /* ImaginariumAppDelegate.m in Sources */,
+				AF7ABD7718FFC8390055839A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7ABD8718FFC8390055839A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7ABD9918FFC8390055839A /* ImaginariumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF7ABD9118FFC8390055839A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF7ABD6618FFC8390055839A /* Imaginarium */;
+			targetProxy = AF7ABD9018FFC8390055839A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF7ABD7318FFC8390055839A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7ABD7418FFC8390055839A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF7ABD7C18FFC8390055839A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7ABD7D18FFC8390055839A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AF7ABD7F18FFC8390055839A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7ABD8018FFC8390055839A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		AF7ABD9518FFC8390055839A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7ABD9618FFC8390055839A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF7ABD9A18FFC8390055839A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF7ABD9B18FFC8390055839A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF7ABD9D18FFC8390055839A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
+				INFOPLIST_FILE = "Imaginarium/Imaginarium-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF7ABD9E18FFC8390055839A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
+				INFOPLIST_FILE = "Imaginarium/Imaginarium-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF7ABDA018FFC8390055839A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Imaginarium.app/Imaginarium";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ImaginariumTests/ImaginariumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF7ABDA118FFC8390055839A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Imaginarium.app/Imaginarium";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
+				INFOPLIST_FILE = "ImaginariumTests/ImaginariumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF7ABD6218FFC8390055839A /* Build configuration list for PBXProject "Imaginarium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7ABD9A18FFC8390055839A /* Debug */,
+				AF7ABD9B18FFC8390055839A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF7ABD9C18FFC8390055839A /* Build configuration list for PBXNativeTarget "Imaginarium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7ABD9D18FFC8390055839A /* Debug */,
+				AF7ABD9E18FFC8390055839A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF7ABD9F18FFC8390055839A /* Build configuration list for PBXNativeTarget "ImaginariumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7ABDA018FFC8390055839A /* Debug */,
+				AF7ABDA118FFC8390055839A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF7ABD5F18FFC8390055839A /* Project object */;
+}
