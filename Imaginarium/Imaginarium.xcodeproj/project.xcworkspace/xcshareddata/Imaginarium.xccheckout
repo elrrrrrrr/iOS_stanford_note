@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5974F047-2AB6-41BB-930E-C352D5BB25B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Imaginarium</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E99C13CA-6AAD-45EC-A929-1C337CBBA114</key>
+		<string>ssh://github.com/elrrrrrrr/iOS_stanford_note.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Imaginarium/Imaginarium.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E99C13CA-6AAD-45EC-A929-1C337CBBA114</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/elrrrrrrr/iOS_stanford_note.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E99C13CA-6AAD-45EC-A929-1C337CBBA114</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E99C13CA-6AAD-45EC-A929-1C337CBBA114</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS_stanford_note</string>
+		</dict>
+	</array>
+</dict>
+</plist>

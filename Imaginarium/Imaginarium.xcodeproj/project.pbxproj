@@ -14,7 +14,6 @@
 		AF7ABD7718FFC8390055839A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD7618FFC8390055839A /* main.m */; };
 		AF7ABD7B18FFC8390055839A /* ImaginariumAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD7A18FFC8390055839A /* ImaginariumAppDelegate.m */; };
 		AF7ABD7E18FFC8390055839A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD7C18FFC8390055839A /* Main_iPhone.storyboard */; };
-		AF7ABD8118FFC8390055839A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD7F18FFC8390055839A /* Main_iPad.storyboard */; };
 		AF7ABD8418FFC8390055839A /* ImaginariumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD8318FFC8390055839A /* ImaginariumViewController.m */; };
 		AF7ABD8618FFC8390055839A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD8518FFC8390055839A /* Images.xcassets */; };
 		AF7ABD8D18FFC8390055839A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD8C18FFC8390055839A /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		AF7ABD8F18FFC8390055839A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7ABD6E18FFC8390055839A /* UIKit.framework */; };
 		AF7ABD9718FFC8390055839A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF7ABD9518FFC8390055839A /* InfoPlist.strings */; };
 		AF7ABD9918FFC8390055839A /* ImaginariumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABD9818FFC8390055839A /* ImaginariumTests.m */; };
+		AF7ABDA418FFC8910055839A /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7ABDA318FFC8910055839A /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		AF7ABD7918FFC8390055839A /* ImaginariumAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImaginariumAppDelegate.h; sourceTree = "<group>"; };
 		AF7ABD7A18FFC8390055839A /* ImaginariumAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumAppDelegate.m; sourceTree = "<group>"; };
 		AF7ABD7D18FFC8390055839A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		AF7ABD8018FFC8390055839A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		AF7ABD8218FFC8390055839A /* ImaginariumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImaginariumViewController.h; sourceTree = "<group>"; };
 		AF7ABD8318FFC8390055839A /* ImaginariumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumViewController.m; sourceTree = "<group>"; };
 		AF7ABD8518FFC8390055839A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		AF7ABD9418FFC8390055839A /* ImaginariumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImaginariumTests-Info.plist"; sourceTree = "<group>"; };
 		AF7ABD9618FFC8390055839A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF7ABD9818FFC8390055839A /* ImaginariumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumTests.m; sourceTree = "<group>"; };
+		AF7ABDA218FFC8910055839A /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		AF7ABDA318FFC8910055839A /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +115,9 @@
 		AF7ABD7018FFC8390055839A /* Imaginarium */ = {
 			isa = PBXGroup;
 			children = (
-				AF7ABD7918FFC8390055839A /* ImaginariumAppDelegate.h */,
-				AF7ABD7A18FFC8390055839A /* ImaginariumAppDelegate.m */,
 				AF7ABD7C18FFC8390055839A /* Main_iPhone.storyboard */,
-				AF7ABD7F18FFC8390055839A /* Main_iPad.storyboard */,
+				AF7ABDA218FFC8910055839A /* ImageViewController.h */,
+				AF7ABDA318FFC8910055839A /* ImageViewController.m */,
 				AF7ABD8218FFC8390055839A /* ImaginariumViewController.h */,
 				AF7ABD8318FFC8390055839A /* ImaginariumViewController.m */,
 				AF7ABD8518FFC8390055839A /* Images.xcassets */,
@@ -129,6 +129,8 @@
 		AF7ABD7118FFC8390055839A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF7ABD7918FFC8390055839A /* ImaginariumAppDelegate.h */,
+				AF7ABD7A18FFC8390055839A /* ImaginariumAppDelegate.m */,
 				AF7ABD7218FFC8390055839A /* Imaginarium-Info.plist */,
 				AF7ABD7318FFC8390055839A /* InfoPlist.strings */,
 				AF7ABD7618FFC8390055839A /* main.m */,
@@ -232,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7ABD8118FFC8390055839A /* Main_iPad.storyboard in Resources */,
 				AF7ABD8618FFC8390055839A /* Images.xcassets in Resources */,
 				AF7ABD7E18FFC8390055839A /* Main_iPhone.storyboard in Resources */,
 				AF7ABD7518FFC8390055839A /* InfoPlist.strings in Resources */,
@@ -256,6 +257,7 @@
 			files = (
 				AF7ABD8418FFC8390055839A /* ImaginariumViewController.m in Sources */,
 				AF7ABD7B18FFC8390055839A /* ImaginariumAppDelegate.m in Sources */,
+				AF7ABDA418FFC8910055839A /* ImageViewController.m in Sources */,
 				AF7ABD7718FFC8390055839A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +295,6 @@
 				AF7ABD7D18FFC8390055839A /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		AF7ABD7F18FFC8390055839A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF7ABD8018FFC8390055839A /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		AF7ABD9518FFC8390055839A /* InfoPlist.strings */ = {
@@ -395,6 +389,7 @@
 				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
 				INFOPLIST_FILE = "Imaginarium/Imaginarium-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,6 +403,7 @@
 				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
 				INFOPLIST_FILE = "Imaginarium/Imaginarium-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,6 +7,7 @@
 //
 
 #import "ImaginariumViewController.h"
+#import "ImageViewController.h"
 
 @interface ImaginariumViewController ()
 
@@ -20,6 +21,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[ImageViewController class]]) {
+        ImageViewController *ivc = (ImageViewController *)segue.destinationViewController;
+        ivc.imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://cloud-id.cn/img/%@.jpg",segue.identifier]];
+        ivc.title = segue.identifier;
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

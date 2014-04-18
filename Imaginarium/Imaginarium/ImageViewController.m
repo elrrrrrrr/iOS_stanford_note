@@ -9,41 +9,68 @@
 #import "ImageViewController.h"
 
 @interface ImageViewController ()
-
+@property (nonatomic,strong) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic,strong) UIImage *image;
 @end
 
 @implementation ImageViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(void)setScrollView:(UIScrollView *)scrollView
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    _scrollView = scrollView;
+    [self.scrollView setContentSize:self.image?self.image.size:CGSizeZero];
+}
+-(void)setImageURL:(NSURL *)imageURL
+{
+    _imageURL = imageURL;
+    [self startDownloadingImage];
+   // self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]];
+}
+-(void)startDownloadingImage
+{
+    self.image = nil;
+    if (self.imageURL) {
+        NSURLRequest *request = [NSURLRequest requestWithURL:self.imageURL];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+        NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request
+            completionHandler:^(NSURL *localfile,NSURLResponse *response, NSError *error) {
+                if (!error) {
+                    if ([request.URL isEqual:self.imageURL]) {
+                        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:localfile]];
+                        dispatch_async(dispatch_get_main_queue(), ^{ self.image = image; });
+                    }
+                }
+                
+        }];
+        [task resume];
     }
-    return self;
+}
+-(UIImageView *)imageView
+{
+    if (!_imageView) {
+        _imageView = [[UIImageView alloc] init];
+    }
+    return _imageView;
 }
 
-- (void)viewDidLoad
+-(UIImage *)image
+{
+    return self.imageView.image;
+}
+
+-(void)setImage:(UIImage *)image
+{
+    self.imageView.image = image;
+    [self.imageView sizeToFit];
+    [self.scrollView setContentSize:self.image?self.image.size:CGSizeZero];
+}
+
+-(void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.scrollView addSubview:self.imageView];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
