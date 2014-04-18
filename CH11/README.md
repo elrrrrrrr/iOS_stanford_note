@@ -30,4 +30,45 @@ UITableViewController 默认设置自身
 2.rows
 3.get a UITableViewCell to draw
 
+每行通过UITableViewCell添加
+staticstyle 不需要
+-(UITableViewCell *)tableView:(UITableView *)sender
+		cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	//get a cell to use 
+	UITableViewCell *cell;
+	cell = [self.tableView deququReusableCellWithIdentifier:@"cell"
+											forIndexPath:indexPath];
+
+    cell.textLabel.text = [self getMyTitleForRow:indexPath.row inSection:indexPath.section];
+    return cell;
+}
+
+-(NSInterger)numberOfSectionsInTableView:(UITableView *)sender;
+-(NSInterger)tableView:(UITableView *)sender numberOfRowsInSection:(NSInterger)section;
+
+tableView:cellForRowAtIndexPath:
+
+-(void)tableView:(UITableView *)sender didSelectRowAtIndexPath:(NSIndexPath *)path
+{
+	// indexPath.row indexPath.section
+}
+
+UITableView Spinner
+--------------------
+@property *refreshControl
+
+Model changes
+-------------
+-(void)reloadData;
+
+-(void)reloadRowsAtIndexPaths:(NSArry *)indexPahts
+				withRowAnimation:(UITableViewRowAnimation)animationSytle;
+
+Universal Applications
+----------------------
+tow different storyboards
+
+
+
 
