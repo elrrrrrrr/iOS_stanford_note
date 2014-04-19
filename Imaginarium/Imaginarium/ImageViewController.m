@@ -8,7 +8,7 @@
 
 #import "ImageViewController.h"
 
-@interface ImageViewController ()
+@interface ImageViewController ()<UISplitViewControllerDelegate,UISplitViewControllerDelegate>
 @property (nonatomic,strong) UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic,strong) UIImage *image;
@@ -39,7 +39,9 @@
                 if (!error) {
                     if ([request.URL isEqual:self.imageURL]) {
                         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:localfile]];
-                        dispatch_async(dispatch_get_main_queue(), ^{ self.image = image; });
+                        dispatch_async(dispatch_get_main_queue(), ^{ self.image = image;
+                            self.title = [self.imageURL description];
+                        });
                     }
                 }
                 
@@ -71,6 +73,28 @@
 {
     [super viewDidLoad];
     [self.scrollView addSubview:self.imageView];
+}
+
+#pragma mark - UISplitViewControllerDelegate
+
+-(void)awakeFromNib
+{
+    self.splitViewController.delegate = self;
+}
+
+-(BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
+{
+    return UIInterfaceOrientationIsPortrait(orientation);
+}
+
+-(void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
+{
+    barButtonItem.title = aViewController.title;
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+-(void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    self.navigationItem.leftBarButtonItem = nil;
 }
 
 @end

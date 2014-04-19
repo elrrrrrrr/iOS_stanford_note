@@ -69,6 +69,14 @@ Universal Applications
 ----------------------
 tow different storyboards
 
+判断设备
+BOOL iPad = ([UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIpad)
 
+master-detail view
+
+－Target/Action 控制 detail 刷新
+－segue
+
+UIpopoverController 
 
 
