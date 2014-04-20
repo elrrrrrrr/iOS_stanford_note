@@ -23,6 +23,7 @@
 		AFA3CEF61903DE5500AC4F7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFA3CEF41903DE5500AC4F7E /* InfoPlist.strings */; };
 		AFA3CEF81903DE5500AC4F7E /* CoredataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CEF71903DE5500AC4F7E /* CoredataTests.m */; };
 		AFA3CF031903DE6A00AC4F7E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CF011903DE6A00AC4F7E /* Model.xcdatamodeld */; };
+		AFA3CF061903E9F200AC4F7E /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CF051903E9F200AC4F7E /* Entity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		AFA3CEF51903DE5500AC4F7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AFA3CEF71903DE5500AC4F7E /* CoredataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoredataTests.m; sourceTree = "<group>"; };
 		AFA3CF021903DE6A00AC4F7E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		AFA3CF041903E9F200AC4F7E /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		AFA3CF051903E9F200AC4F7E /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				AFA3CF011903DE6A00AC4F7E /* Model.xcdatamodeld */,
+				AFA3CF041903E9F200AC4F7E /* Entity.h */,
+				AFA3CF051903E9F200AC4F7E /* Entity.m */,
 				AFA3CECF1903DE5400AC4F7E /* Coredata */,
 				AFA3CEF11903DE5500AC4F7E /* CoredataTests */,
 				AFA3CEC81903DE5400AC4F7E /* Frameworks */,
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA3CF061903E9F200AC4F7E /* Entity.m in Sources */,
 				AFA3CEE31903DE5500AC4F7E /* CoredataViewController.m in Sources */,
 				AFA3CED61903DE5400AC4F7E /* main.m in Sources */,
 				AFA3CEDA1903DE5400AC4F7E /* CoredataAppDelegate.m in Sources */,

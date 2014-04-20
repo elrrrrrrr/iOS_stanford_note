@@ -37,3 +37,8 @@ NSNotification
 	[super viewWillDisapperar:animated];
 	]
 }
+
+[NSEntityDescription insertNewObjectForEntityForName:@"photo"
+					 inManagedObjectContext:context];
+
+addSubClass to fit the subclasses
